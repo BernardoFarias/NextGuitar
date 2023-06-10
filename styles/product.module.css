@@ -85,6 +85,7 @@
     border:none;
     transition-property: background-color;
     transition-duration: 300ms;
+    margin-top: 1rem;
 }
 
 .form input[type="submit"]:hover{
