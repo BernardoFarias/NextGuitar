@@ -20,13 +20,13 @@ const About = () => {
           {/* <Image src={"/img/about.jpg"} width={850} height={600} alt="image about us" /> */}
           <div>
               <p className={styles.p}>
-              My name is <b>Bernardo Farias</b>, and I'm a front-end developer with a passion for 
+              My name is <b>Bernardo Farias</b>, and I am a front-end developer with a passion for 
               react and web development. 
               I created this website as a solo project to showcase my skills in using React, Next, and Strapi
               to build a dynamic and engaging e-commerce platform for guitar enthusiasts.
               </p>
             <p className={styles.p}>
-              If you have any questions or suggestions, please don't 
+              If you have any questions or suggestions, please do not 
               hesitate to reach out to me using the contact form on my website.
             </p>
             <p className={styles.p}>
