@@ -1,0 +1,93 @@
+.card {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 70rem;
+    margin: 5rem auto;
+}
+.cardContent {
+    padding: 1rem;
+}
+
+.cardTitle{
+    padding: 0.6em 4em;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    background: #e6178c;
+    border-radius: 10px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+}
+
+
+.cardDescription {
+    font-size: 1.8rem;
+    color: var(--white);
+    text-align: justify;
+}
+.cardPrice {
+    color: var(--primary);
+    font-size: 4rem;
+    margin: 0;
+    font-weight: 900;
+}
+
+.cardImage {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgba(230, 23, 140, 0.2); /* Add box-shadow for 3D effect */
+    transform: translate3d(0, 0, 0); /* Add hardware acceleration for better performance */
+    transition: all 0.3s ease-in-out; /* Add transition for smooth effects */
+    border-radius: 1rem;
+  }
+
+.cardImage:hover {
+    transform: translate3d(0, -5px, 0); /* Add lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2),
+                0 6px 6px rgba(0, 0, 0, 0.1); /* Add larger box-shadow on hover */
+  }
+
+.form {
+    display: inline-block;
+    margin-top: 3rem;
+}
+
+.form select, 
+.form input[type="submit"]{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2rem; 
+}
+
+.form select{
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid var(--black);
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.select:hover {
+    transform: scale(1.01);
+    transition: all 0.1s ease-in-out
+}
+
+.form input[type="submit"]{
+    background-color: var(--primary);
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1.4rem;
+    border:none;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+
+.form input[type="submit"]:hover{
+    cursor:pointer;
+    background-color: var(--black);
+}

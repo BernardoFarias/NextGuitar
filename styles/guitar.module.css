@@ -1,0 +1,57 @@
+.card {
+    background-color: var(--white);
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+                0 0 0 2px rgba(230, 23, 140, 0.2); /* Add box-shadow for 3D effect */
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0); /* Add hardware acceleration for better performance */
+    transition: all 0.3s ease-in-out; /* Add transition for smooth effects */
+    cursor: pointer;
+    padding: 1.5rem;
+}
+
+.card:hover {
+  transform: translate3d(0, -5px, 0); /* Add lift effect on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2),
+              0 6px 6px rgba(0, 0, 0, 0.1); /* Add larger box-shadow on hover */
+}
+
+  
+  .card img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .cardContent {
+    padding: 1rem;
+  }
+  
+  .cardTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--black);
+  }
+  
+  .cardPrice {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+  }
+  
+  .cardDescription {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+  }

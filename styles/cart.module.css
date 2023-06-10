@@ -1,0 +1,88 @@
+.content{
+    display: grid;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+@media(min-width: 768px){
+    .content{
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+.cart{
+    padding: 3rem;
+    color: var(--white);
+}
+
+.select{
+    all: unset;
+    border: 1px solid #e6178c;
+    color: #e6178c;
+    text-align: center;
+    display: block;
+    padding: .5rem;
+    width: 100%;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.select:hover {
+    transform: scale(1.05);
+    transition: all 0.1s ease-in-out;
+  }
+
+.product{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #44565c1f;
+    gap: 6rem;
+    padding: 3rem;
+    border: 1px solid #cfcfcf47;
+    margin: 1rem;
+    position: relative;
+    align-items: center;
+}
+
+.product span{
+    font-weight: 900;
+    font-size: 3.2rem;
+}
+
+.name{
+    font-weight: 700;
+    font-size: 4.2rem;
+    margin: 0;
+}
+
+.product .price{
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.subtotal{
+    font-size: 2.2rem;
+}
+
+.resume{
+    background-color: #f9fafb;
+    padding: 3rem;
+    border-radius: 1rem;
+    position: sticky;
+    top: 3rem;
+    margin-bottom: 6rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* sombra del div */
+}
+
+.btnDelete{
+    all: unset;
+    position: absolute;
+    top: 5rem;
+    right: 3rem;
+    width: 2.5rem;
+}
+
+.btnDelete:hover{
+    cursor: pointer;
+    transform: scale(1.4);
+    transition: all 0.3s ease-in-out
+}

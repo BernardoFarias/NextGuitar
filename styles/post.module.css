@@ -1,0 +1,45 @@
+.card {
+    border-radius: 8px;
+    display: grid;
+    background-color: var(--white);
+    gap: 3rem;
+    grid-template-columns: 2fr 3fr;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0); /* Add hardware acceleration for better performance */
+    transition: all 0.3s ease-in-out; /* Add transition for smooth effects */
+    cursor: pointer;
+    padding: 3.5rem;
+    margin: 3rem;
+}
+
+.card:hover {
+    transform: translate3d(0, -5px, 0); /* Add lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2),
+                0 6px 6px rgba(0, 0, 0, 0.1); /* Add larger box-shadow on hover */
+  }
+
+.postDescription {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    color: var(--black);
+    margin-top: 6rem;
+}
+
+.cardTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--black);
+  }
+
+.cardPublished {
+    font-size: 1.8rem;
+    font-weight:bold;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+  }
+

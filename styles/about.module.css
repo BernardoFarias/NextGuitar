@@ -1,0 +1,34 @@
+.about{
+    background-image: linear-gradient(to right, rgb(0 0 0/ .99), rgb(0 0 0 / 70%)),
+    url(../public/img/aboutBg.jpg);
+    background-position: bottom;
+    background-size:cover;
+    margin: unset;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    width: unset;
+}
+
+
+@media(min-width: 768px){
+    .about{
+        background-image: linear-gradient(to right, rgb(0 0 0), rgb(0 0 0 / 0%)),
+        url(../public/img/aboutBg.jpg);
+        background-position: right;
+        background-size: 160%;
+        margin: unset;
+        width: unset;
+    }
+}
+
+.p{
+    color: var(--white);
+    margin-top: 6rem;
+}
+
+@media(min-width: 768px){
+    .contentRight{
+    width: 40%;
+    margin-left: 50%;
+    }
+}
